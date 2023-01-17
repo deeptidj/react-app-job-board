@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import JobBoard from "./JobBoard";
+import TreeBoard from "./TreeBoard";
 import axios from "axios";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         </a>
       </header>
       <div>
-        <JobBoard />
+        <TreeBoard />
       </div>
     </div>
   );

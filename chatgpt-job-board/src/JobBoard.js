@@ -7,7 +7,8 @@ class JobBoard extends React.Component {
   };
 
   componentDidMount() {
-    axios.get('https://example.com/jobs')
+    // axios.get('https://example.com/jobs')
+    axios.get('https://data.sfgov.org/resource/tkzw-k3nq.json')
     .then(res => {
       const jobs = res.data;
       this.setState({ jobs });
