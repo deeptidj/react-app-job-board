@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import JobBoard from "./JobBoard";
 import TreeBoard from "./TreeBoard";
-import axios from "axios";
+import JobBoard from "./JobBoard";
 
 function App() {
   return (
     <div className="App">
+      <div>
+        <TreeBoard />
+      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,7 +24,7 @@ function App() {
         </a>
       </header>
       <div>
-        <TreeBoard />
+        <JobBoard />
       </div>
     </div>
   );

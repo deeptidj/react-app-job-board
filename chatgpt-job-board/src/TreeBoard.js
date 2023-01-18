@@ -9,8 +9,8 @@ class TreeBoard extends React.Component {
   componentDidMount() {
 
     // axios.get('https://data.sfgov.org/resource/tkzw-k3nq.json')
-    axios.get('http://localhost:3000/trees')
     //http://localhost:3000/trees
+    axios.get('http://localhost:3000/trees')
     .then(res => {
       const trees = res.data;
       this.setState({ trees });
